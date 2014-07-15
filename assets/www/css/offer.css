@@ -1,0 +1,410 @@
+/*Modificaciones al bootstrap*/
+.container-fluid>.navbar-header
+{
+	margin-right: initial !important;
+	margin-left: initial !important;
+}
+.navbar-inverse .navbar-brand {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: #FFFFFF;
+	border-radius: 17px;
+	color: black;
+	width: 50px;
+	height: 40px;
+}
+
+/*--------------------------*/
+.btnback {
+	float: left;
+}
+.btnmenu {
+	float: right;
+}
+.navbar-inverse {
+	box-shadow: 0px 0px 10px 10px rgba(36, 35, 44, 0.75);
+	-moz-box-shadow: 0px 0px 10px 10px rgba(36, 35, 44, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(36, 35, 44, 0.75);
+}
+body{
+
+
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, circle closest-corner, #494755 0%, #2F2E38 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, circle closest-corner, #494755 0%, #2F2E38 100%);
+
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, circle closest-corner, #494755 0%, #2F2E38 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #494755), color-stop(1, #2F2E38));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, circle closest-corner, #494755 0%, #2F2E38 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle closest-corner at center, #494755 0%, #2F2E38 100%);
+}
+html, body {
+	height: 100%; 
+	width: 100%; 
+	margin: 0;
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+
+    .divCat {
+		margin-left: 4%; 
+		margin-top: 1%;
+    }
+
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+
+    .divCat {
+		margin-left: 3.2%; 
+		margin-top: 1%;
+    }
+
+}
+.divCat {
+	position: relative; 
+	overflow: hidden; 
+	background-image: initial;
+	/*	background-cwhite; */
+	height: 21%;
+	width: 29%; 
+	margin-bottom: 1%;
+	float: left; 
+	/*-webkit-transform: scale(.80);
+    -ms-transform: scale(.80);
+    -moz-transform: scale(.80);
+    -o-transform: scale(.80);
+    transform: scale(.80);*/
+}
+.navImage{
+    top: 0; 
+    left: 0; 
+    margin: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+    position: absolute;
+}
+.circleCat{
+	width: 77%;
+	height: 63%;
+	background-color: red;
+	border: solid 3px white;
+	border-radius: 65%;
+	margin: 0 auto;
+}
+.titleCat
+{
+	/*    position: absolute; */
+	/*white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	height: 30px; /* Fallback for non-webkit */
+	margin: 0 auto;
+	line-height: 1.2;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	///////////////////////////////////////////////////
+    bottom: 0; 
+    font-size: 100%; 
+    left: 0; 
+    padding: 0 0 0px 2%; 
+    text-decoration: none; 
+    width: 95%;
+    text-align: center;
+	color: white;
+}
+.transform
+{
+    -webkit-transform: scale(.80);
+    -ms-transform: scale(.80);
+    -moz-transform: scale(.80);
+    -o-transform: scale(.80);
+    transform: scale(.80);
+}
+
+.navMetroIOS {
+	position: relative !important; 
+	overflow: hidden !important; 
+	/*	background-cwhite; */
+	height: 100%;
+	width: 150px; 
+	margin-left: 2%; 
+	margin-top: 1%;
+	margin-bottom: 1%;
+	float: left; 
+	-webkit-transform: scale(.80);
+    -ms-transform: scale(.80);
+    -moz-transform: scale(.80);
+    -o-transform: scale(.80);
+    transform: scale(.80);
+}
+.cliheader{
+	position: relative; 
+	overflow: hidden; 
+	background-image: initial;
+	height: 20%;
+}
+.logo{
+	width: 22%;
+	height: 69%;
+	border: solid 3px white;
+	border-radius: 65%;
+	margin: 0 auto;
+	margin-left: 15%;
+	float: left;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+.nombreCli{
+	color: white;
+	display: -webkit-box;
+	height: 40%;
+	left: 0;
+	padding: 0 0 0px 2%;
+	width: 63%;
+	font-size: 23px;
+	font-weight: bold;
+	padding-top: 3%;
+}
+.esloganCli{
+	color: white;
+	display: -webkit-box;
+	height: 40%;
+	left: 0;
+	padding: 0 0 0px 2%;
+	width: 63%;
+	font-size: 16px;
+
+}
+
+.statusbar{
+	position: relative; 
+	overflow: hidden; 
+	background-color: #A2A1A8;
+	height: 5%;
+}
+#centrador{
+	margin: 0 auto;
+	height: 100%;
+	width: 87%;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 75%;
+	font-weight: bold;
+}
+.resena , #mapa{
+	margin: 0 auto;
+	height: 14%;
+	background-color: #F9F9F9;
+	width: 87%;
+	border-radius: 7px;
+	margin-top: 1%;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 75%;
+	font-weight: bold;
+}
+#mapa {
+	border-radius: initial;
+	height: 26%;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+
+}
+.ofertas , .contacto{
+	margin: 0 auto;
+	height: 100%;
+	background-color: #F9F9F9;
+	width: 49.5%;
+	border-radius: 7px;
+	position: relative;
+}
+.ofertas{
+	float: left;
+	background-color: #DE2523;
+}
+.contacto{
+	float: right;
+	background-color: #153244;
+}
+.doble{
+	margin: 0 auto;
+	height: 14%;
+	width: 87%;
+	border-radius: 7px;
+	margin-top: 1%;
+}
+.direccion{
+	margin: 0 auto;
+	height: 6%;
+	background-color: #F9F9F9;
+	width: 87%;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 75%;
+	font-weight: bold;
+}
+#medium
+{
+	margin: 0 auto;
+	height: 20%;
+	background-color: #F9F9F9;
+	width: 100%;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 75%;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: center;
+}
+.oferHome
+{
+	position: relative;
+	overflow: hidden;
+	height: 28%;
+	width: 48%;
+	margin-bottom: 1%;
+	float: left;
+	margin-left: 1%;
+	background-color: rgb(150, 212, 236);
+	border-radius: 7px;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+
+}
+.vigencia {
+	position: absolute;
+	display: block;
+	display: -webkit-box;
+	height: 50%;
+	margin: 0 auto;
+	line-height: 1.2;
+	color: black;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	font-size: 12px;
+	left: 0;
+	text-decoration: none;
+	width: 100%;
+	bottom: 0px;
+	right: 0px;
+	opacity: 0.6;
+	background-color: white;
+
+}
+.ofertaName{
+	font-weight: bold;
+	padding-left: 5%;
+}
+.ofertadesc{
+	font-size: 9px;
+	padding-left: 5%;
+}
+.ofertaVigen{
+	font-size: 11px;
+	padding-left: 5%;
+}
+.catview {
+	position: relative; 
+	overflow: hidden; 
+	height: 16%;
+	width: 100%; 
+	margin-bottom: 1%;
+	margin-top: 1%;
+	border-bottom: solid 1px #413E4C;
+	/*-webkit-transform: scale(.80);
+    -ms-transform: scale(.80);
+    -moz-transform: scale(.80);
+    -o-transform: scale(.80);
+    transform: scale(.80);*/
+}
+.cliImg{
+	width: 25%;
+	height: 100%;
+	background-color: red;
+	border: solid 3px white;
+	border-radius:100%;
+	margin: 0 auto;
+	float: left;
+	margin-left: 5%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.cliName{
+	color:white;
+	font-weight: bold;
+	font-size: 150%;
+	padding-left: 33%;
+	padding-top: 2%;
+}
+.cliDir{
+	color:white;
+	padding-left: 33%;
+	padding-top: 1%;
+}
+.ofertaImg
+{
+	position: relative;
+	overflow: hidden;
+	background-image: initial;
+	height: 100%;
+	margin-bottom: 3%;
+	background-color: aliceblue;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+.fav , .comp{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 11%;
+	font-size: 23px;
+	color: #DD5555;
+}
+.horario{
+	position: relative;
+	float: right;
+	color: white;
+	height: 100%;
+	width: 32%;
+	font-size: 14px;
+}
+.page{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.flipContainer
+{
+	margin-bottom: 2%;
+}

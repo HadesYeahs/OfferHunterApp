@@ -1,0 +1,27 @@
+<script id="cliente" type="text/template">
+	<div class ="cliheader <%= idCli %>">
+		<div class = "logo" ></div>
+		<span class = "nombreCli"><%= nomCli %></span>
+		<span class = "esloganCli"><%= esloganCli %></span>
+	</div>
+	<div class ="statusbar">
+		<div id = "centrador">
+			<div class = "fav"><i class="fa fa-share-alt"></i></div>
+			<div class = "comp"><i class="fa fa-star"></i></div>
+			<div class = "horario"><i class="fa fa-dot-circle-o switch"></i><%= horarioCli %></div>
+		</div>
+	</div>
+	<div class ="resena">
+		<%= resenaCli %>
+	</div>
+	<div class ="doble">
+		<div class ="ofertas">
+			<div id ="medium">Ofertas Recientes.</div>
+		</div>
+		<div class ="contacto">
+			<div id ="medium">Contacto</div>
+		</div>
+	</div>
+	<div id ="mapa"></div>
+	<div class ="direccion"><%= dirCli %></div>
+</script>
