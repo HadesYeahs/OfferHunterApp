@@ -14,6 +14,7 @@ define([
         views[name].clean();
       }
     }
+
     var view = new View(options);
     views[name] = view;
     if(typeof context.children === 'undefined'){

@@ -2,8 +2,9 @@ define([
   'jquery',
   'lodash',
   'backbone',
+  'bootstrap',
   'text!templates/header/menu.html'
-], function($, _, Backbone, headerMenuTemplate){
+], function($, _, Backbone,Bootstrap,headerMenuTemplate){
   var HeaderMenuView = Backbone.View.extend({
     el: '.main-menu-container',
     initialize: function () {
@@ -11,6 +12,10 @@ define([
     render: function () {
       $(this.el).html(headerMenuTemplate);
       $('a[href="' + window.location.hash + '"]').addClass('active');
+	  $('.navbar-form').submit(function( event ) {
+		var seach = $('.form-control').val();
+		window.location.href="#/search/"+seach;
+	  });
     },
     events: {
       'click a': 'highlightMenuItem'

@@ -12,16 +12,24 @@ define([
 		selff = this;
 		selff.template =  _.template($(inicioPageTemplate).filter('#offerIniTemplate').html());
     },
-    render: function () {
-		
+    render: function (id) {
+			selff.$el.removeClass("pageerror");
+			selff.$el.css("background-image", ""); 
+			$('.navbar-brand').html("Offer Hunter");
+			if(id == "")
+				var url = 'http://michellhdz.com/offerhunter/laravel/public/index.php/oferta'
+			else
+				var url = 'http://michellhdz.com/offerhunter/laravel/public/index.php/ofertacliente/'+id
+
+
 			$.ajax({
-				url: 'http://michellhdz.com/offerhunter/laravel/public/index.php/oferta',
+				url: url,
 				dataType: 'jsonp',
 				data: ""/*,
 				complete: function(objeto, exito){
 					alert("Me acabo de completar")
 					if(exito=="success"){
-						alert("Y con Ã©xito");
+						alert("Y con éxito");
 					}
 				},
 				success: function (res) {
@@ -44,8 +52,8 @@ define([
 					}
 				},
 				error: function(objeto, quepaso, otroobj){
-					alert("Estas viendo esto por que fallÃ©");
-					alert("PasÃ³ lo siguiente: "+quepaso);
+					alert("Estas viendo esto por que fallé");
+					alert("Pasó lo siguiente: "+quepaso);
 				}*/
 			}).then(function(res){
 				var ofertas = res.data;

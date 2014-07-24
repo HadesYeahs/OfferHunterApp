@@ -580,7 +580,10 @@ public class SQLitePlugin extends CordovaPlugin
 									row.put(key, cur.getInt(i));
 									break;
 								case Cursor.FIELD_TYPE_FLOAT:
-									row.put(key, cur.getString(i));
+									/** 2014-07-16@ARMZ En samsung tab 2 10' con getFloat funciona correctamente */
+									//row.put(key, cur.getFloat(i));
+									//row.put(key, cur.getString(i));
+									row.put(key, cur.getDouble(i));
 									break;
 								case Cursor.FIELD_TYPE_BLOB:
 									row.put(key, new String(Base64.encode(cur.getBlob(i), Base64.DEFAULT)));
